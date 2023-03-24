@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/group_back"
+    tools:context=".Group">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/introtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="37dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="College \nCommitee"
+                android:textColor="#50009F"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.174"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="55dp"
+                app:layout_constraintTop_toBottomOf="@+id/introtxt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/c1"
+                    android:layout_width="310dp"
+                    android:layout_gravity="center"
+                    android:layout_height="380dp"
+                    android:layout_marginBottom="18dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ruchi" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:elevation="100dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="170dp"
+                            android:layout_height="250dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/photo_gredient"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="50dp"
+                            android:elevation="200dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Ruchi Channa"
+                            android:textColor="#fff"
+                            android:textSize="25sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="25dp"
+                            android:elevation="200dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="President"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="310dp"
+                    android:layout_gravity="center"
+                    android:layout_height="380dp"
+                    android:layout_marginBottom="18dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/nikhil" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:elevation="100dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="170dp"
+                            android:layout_height="250dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/photo_gredient"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="50dp"
+                            android:elevation="200dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Nikhil Nooli"
+                            android:textColor="#fff"
+                            android:textSize="25sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="25dp"
+                            android:elevation="200dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="General Secretary"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="310dp"
+                    android:layout_gravity="center"
+                    android:layout_height="380dp"
+                    android:layout_marginBottom="18dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/gauri" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:elevation="100dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="170dp"
+                            android:layout_height="250dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/photo_gredient"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="50dp"
+                            android:elevation="200dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Gauri Bakshi"
+                            android:textColor="#fff"
+                            android:textSize="25sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="25dp"
+                            android:elevation="200dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Treasurer"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="310dp"
+                    android:layout_gravity="center"
+                    android:layout_height="380dp"
+                    android:layout_marginBottom="18dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="10dp">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/abhinav" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:elevation="100dp"
+                            android:layout_gravity="bottom"
+                            android:layout_marginTop="170dp"
+                            android:layout_height="250dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/photo_gredient"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginBottom="50dp"
+                            android:elevation="200dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Abhinav Khandagle"
+                            android:textColor="#fff"
+                            android:textSize="25sp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="25dp"
+                            android:elevation="200dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Sport Head"
+                            android:textColor="#fff"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

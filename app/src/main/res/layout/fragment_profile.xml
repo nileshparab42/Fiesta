@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/profile_bg">
+
+
+        <TextView
+            android:id="@+id/introtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Profile"
+            android:textColor="#50009F"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="320dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Name"
+                        android:textColor="#1E1E1E"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Nilesh Parab"
+                        android:textColor="#1E1E1E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#C3C3C3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="17dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Username"
+                        android:textColor="#1E1E1E"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ni_parab42"
+                        android:textColor="#1E1E1E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="#C3C3C3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="17dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Birth Date"
+                        android:textColor="#1E1E1E"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="10/01/2002"
+                        android:textColor="#1E1E1E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="#C3C3C3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginVertical="17dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Location"
+                        android:textColor="#1E1E1E"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Mumbai"
+                        android:textColor="#1E1E1E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="104dp"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:civ_border_width="5dp"
+            app:civ_border_color="@color/app_font"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            style="@android:style/Widget.Button"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_btn"
+            android:fontFamily="@font/poppins_bold"
+            android:text="LOGOUT"
+            android:textAlignment="center"
+            android:textColor="#F6F6F6"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.506" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/authback"
+    tools:context=".AuthScreen">
+
+
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="Download all the design resources\n available on the vilover channel for free"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#50009F"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.491"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="357dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="204dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/women" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Welcome back \nto Fiesta"
+        android:textAlignment="center"
+        android:textColor="#50009F"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/button"
+        style="@android:style/Widget.Button"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="356dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_btn"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="onClickButton1"
+        android:text="LOGIN"
+        android:textAlignment="center"
+        android:textColor="#F6F6F6"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:id="@+id/button2"
+        style="@android:style/Widget.Button"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_btn"
+        android:fontFamily="@font/poppins_bold"
+        android:onClick="onClickButton2"
+        android:text="SIGNUP"
+        android:textColor="#F6F6F6"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_line" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

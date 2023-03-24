@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Event">
+
+    <ScrollView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img0" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:cardElevation="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Freshers Party"
+                android:textColor="@color/purple_700"
+                android:textSize="35sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="35dp"
+                android:text="@string/infoeve"
+                android:textColor="#1E1E1E"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button2"
+                style="@android:style/Widget.Button"
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/background_btn"
+                android:fontFamily="@font/poppins_bold"
+                android:onClick="onClickPay"
+                android:text="PAY NOW"
+                android:textColor="#F6F6F6"
+                android:textSize="18sp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
