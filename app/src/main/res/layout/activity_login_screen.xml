@@ -24,7 +24,7 @@
         app:srcCompat="@drawable/top_background" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivProfile"
         android:layout_width="150dp"
         android:layout_marginTop="30dp"
         android:layout_height="250dp"
@@ -75,7 +75,7 @@
                 tools:ignore="DuplicateIds" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginHorizontal="30dp"
@@ -100,7 +100,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName1"
+                android:id="@+id/editPassword"
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -155,7 +155,7 @@
             </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button2"
+            android:id="@+id/buttonLogin"
             android:layout_gravity="center"
             style="@android:style/Widget.Button"
             android:layout_width="320dp"
@@ -164,7 +164,6 @@
             android:layout_marginEnd="32dp"
             android:background="@drawable/background_btn"
             android:fontFamily="@font/poppins_bold"
-            android:onClick="onClickButton"
             android:text="LOGIN"
             android:textColor="#F6F6F6"
             android:textSize="18sp" />

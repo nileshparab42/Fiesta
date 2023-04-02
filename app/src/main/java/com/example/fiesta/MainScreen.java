@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.DocumentsContract;
@@ -16,6 +17,7 @@ import android.widget.Toast;
 import com.example.fiesta.databinding.ActivityMainBinding;
 import com.example.fiesta.databinding.MainScreenBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainScreen extends AppCompatActivity {
 
@@ -25,6 +27,8 @@ public class MainScreen extends AppCompatActivity {
         finishAffinity();
     }
 
+    
+    
     MainScreenBinding binding;
 
 
@@ -41,6 +45,8 @@ public class MainScreen extends AppCompatActivity {
         homeTrans.replace(R.id.content,new Home());
 //        homeTrans.addToBackStack(null);
         homeTrans.commit();
+
+
 
         binding.bottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -96,6 +102,14 @@ public class MainScreen extends AppCompatActivity {
     public void onClickPay(View view) {
         Intent iTic = new Intent(MainScreen.this,Ticket.class);
         startActivity(iTic);
+    }
+
+    public void goToFlash(View view) {
+        FirebaseAuth mAuth = FirebaseAuth.getInstance();
+        mAuth.signOut();
+        Toast.makeText(this, "Logout Successfully", Toast.LENGTH_SHORT).show();
+        Intent iSplash = new Intent(MainScreen.this,SplashScreen.class);
+        startActivity(iSplash);
     }
 }
 

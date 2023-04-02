@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "666344174992",
+    "project_id": "fiesta-36c5b",
+    "storage_bucket": "fiesta-36c5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:666344174992:android:cb36f553a2a99d23f0ef15",
+        "android_client_info": {
+          "package_name": "com.example.fiesta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "666344174992-b6f8l6v98soram2f78ii2u0q55movuvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh9M5U_sTYeYasniPSt5NwVxUCam3BMFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "666344174992-b6f8l6v98soram2f78ii2u0q55movuvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="app_font">#7000DF</color>
 
+    <color name="shimmer_color">#8B8B8B</color>
+
     //onboarding colors
     <color name="background">#F0F4F3</color>
     <color name="buttontext">#5B00B6</color>
