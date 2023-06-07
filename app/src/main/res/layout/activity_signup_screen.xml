@@ -71,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:text="Enter Email"
                     android:textColor="#2F3363"
                     android:textSize="18sp"
@@ -141,10 +141,49 @@
                     android:ems="10"
                     android:hint="Enter your Password"
                     android:padding="8dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="15dp"
                     android:textColor="#a2a4b5"
                     android:textSize="16sp" />
 
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="305dp"
+                    android:layout_height="70dp"
+                    android:elevation="10dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <CheckBox
+                            android:buttonTint="@color/purple_700"
+                            android:id="@+id/cbCaptcha"
+                            android:gravity="center"
+                            android:layout_marginStart="20dp"
+                            android:layout_width="30dp"
+                            android:layout_height="match_parent">
+                        </CheckBox>
+                        <TextView
+                            android:id="@+id/googleCaptchaText"
+                            android:layout_marginStart="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="I'm not a Robot">
+                        </TextView>
+
+                        <ImageView
+                            android:layout_marginStart="80dp"
+                            android:layout_width="45dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ss_logo">
+                        </ImageView>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
 
 
 
@@ -162,17 +201,7 @@
                     android:textColor="#F6F6F6"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/button4"
-                    android:layout_width="320dp"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
-                    android:layout_height="36dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginEnd="32dp"
-                    android:layout_marginTop="16dp"
-                    android:text="don't have an account? Register"
-                    android:textColor="#000000"/>
+
 
 
             </LinearLayout>

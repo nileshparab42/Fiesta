@@ -65,6 +65,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/tvUname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="60dp"
@@ -94,11 +95,12 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Username"
+                        android:text="Phone No."
                         android:textColor="#1E1E1E"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/tvNickname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
@@ -132,6 +134,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/tvBday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="30dp"
@@ -165,6 +168,7 @@
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/tvLocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="50dp"

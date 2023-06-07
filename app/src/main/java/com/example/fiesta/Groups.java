@@ -64,12 +64,59 @@ public class Groups extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v= inflater.inflate(R.layout.fragment_groups, container, false);
-        CardView card = (CardView) v.findViewById(R.id.card1);
-        card.setOnClickListener(new View.OnClickListener() {
+        CardView card1 = (CardView) v.findViewById(R.id.card1);
+        CardView card2 = (CardView) v.findViewById(R.id.card2);
+        CardView card3 = (CardView) v.findViewById(R.id.card3);
+        CardView card4 = (CardView) v.findViewById(R.id.card4);
+        card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent com = new Intent(getActivity(),Group.class);
                 startActivity(com);
+
+                Intent intent = new Intent(getContext(),Group.class);
+                intent.putExtra("gname","College Committee");
+                intent.putExtra("title","College \nCommittee");
+                startActivity(intent);
+            }
+        });
+
+        card2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent com = new Intent(getActivity(),Group.class);
+                startActivity(com);
+
+                Intent intent = new Intent(getContext(),Group.class);
+                intent.putExtra("gname","Technical Committee");
+                intent.putExtra("title","Technical \nCommittee");
+                startActivity(intent);
+            }
+        });
+
+        card3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent com = new Intent(getActivity(),Group.class);
+                startActivity(com);
+
+                Intent intent = new Intent(getContext(),Group.class);
+                intent.putExtra("gname","Teachers Committee");
+                intent.putExtra("title","Teachers \nCommittee");
+                startActivity(intent);
+            }
+        });
+
+        card4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent com = new Intent(getActivity(),Group.class);
+                startActivity(com);
+
+                Intent intent = new Intent(getContext(),Group.class);
+                intent.putExtra("gname","Sports Committee");
+                intent.putExtra("title","Sports \nCommittee");
+                startActivity(intent);
             }
         });
         return v;

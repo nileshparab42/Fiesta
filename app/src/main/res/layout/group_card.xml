@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/c1"
+    android:layout_width="310dp"
+    android:layout_gravity="center"
+    android:layout_height="380dp"
+    android:layout_marginBottom="18dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="10dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ruchi" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:elevation="100dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="170dp"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/photo_gredient"/>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="50dp"
+                android:elevation="200dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Ruchi Channa"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/tvDes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="25dp"
+                android:elevation="200dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="President"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </FrameLayout>
+
+</androidx.cardview.widget.CardView>

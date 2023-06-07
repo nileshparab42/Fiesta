@@ -62,7 +62,7 @@
                     android:layout_gravity="center"
                     android:elevation="100dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="College \nCommitee"
+                    android:text="College \nCommittee"
                     android:textColor="#fff"
                     android:textSize="35sp" />
 
@@ -76,6 +76,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
             android:layout_width="330dp"
             android:layout_gravity="center"
             android:layout_height="180dp"
@@ -92,7 +93,7 @@
                     android:layout_gravity="center"
                     android:elevation="100dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Technical \nCommitee"
+                    android:text="Technical \nCommittee"
                     android:textColor="#fff"
                     android:textSize="35sp" />
 
@@ -106,6 +107,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card3"
             android:layout_width="330dp"
             android:layout_gravity="center"
             android:layout_height="180dp"
@@ -122,7 +124,7 @@
                     android:layout_gravity="center"
                     android:elevation="100dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Teachers \nCommitee"
+                    android:text="Teachers \nCommittee"
                     android:textColor="#fff"
                     android:textSize="35sp" />
 
@@ -136,6 +138,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card4"
             android:layout_width="330dp"
             android:layout_gravity="center"
             android:layout_height="180dp"
@@ -152,7 +155,7 @@
                     android:layout_gravity="center"
                     android:elevation="100dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="Staff \nCommitee"
+                    android:text="Sports \nCommittee"
                     android:textColor="#fff"
                     android:textSize="35sp" />
 

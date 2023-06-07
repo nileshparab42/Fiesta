@@ -1,5 +1,6 @@
 package com.example.fiesta;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -16,13 +17,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.shimmer.ShimmerFrameLayout;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
@@ -44,6 +50,8 @@ public class Profile extends Fragment {
     StorageReference storageReference;
     ImageView ivProfile;
 
+    FirebaseFirestore dw,db;
+
     FirebaseAuth mAuth = FirebaseAuth.getInstance();
     FirebaseUser currentUser = mAuth.getCurrentUser();
 
@@ -51,6 +59,10 @@ public class Profile extends Fragment {
     LinearLayout dataLayout;
 
 //    ProgressDialog progressdia;
+
+    TextView tvUname,tvNickname,tvBday,tvLocation;
+
+    String uname,nickname,bday,location;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -93,15 +105,59 @@ public class Profile extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
 
+        tvBday = view.findViewById(R.id.tvBday);
+        tvUname = view.findViewById(R.id.tvUname);
+        tvNickname = view.findViewById(R.id.tvNickname);
+        tvLocation = view.findViewById(R.id.tvLocation);
+
+        dw = FirebaseFirestore.getInstance();
+
+        String fileName = currentUser.getUid();
+
+
         shimmerFrameLayout = view.findViewById(R.id.profile_ph);
         dataLayout = view.findViewById(R.id.profile_data);
         ivProfile = view.findViewById(R.id.ivProfile);
 
+
+
         dataLayout.setVisibility(View.INVISIBLE);
         shimmerFrameLayout.startShimmer();
 
+        String uid = currentUser.getUid();
 
-        String fileName = currentUser.getUid();
+
+        dw.collection("Users")
+                .document(uid)
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()){
+                            DocumentSnapshot documentSnapshot = task.getResult();
+                            if(documentSnapshot!=null && documentSnapshot.exists()){
+                                uname = documentSnapshot.getString("uname");
+                                tvUname.setText(uname);
+                                nickname = documentSnapshot.getString("uphno");
+                                tvNickname.setText(nickname);
+                                location = documentSnapshot.getString("ulocation");
+                                tvLocation.setText(location);
+                                bday = documentSnapshot.getString("ubday");
+                                tvBday.setText(bday);
+
+                            }
+                        }
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getActivity(), "Error", Toast.LENGTH_SHORT).show();
+                    }
+                });
+
+
+
+
         storageReference = storage.getReference().child("Profile Photos/"+fileName);
 
         // Retrieve the image data as a byte array
@@ -161,7 +217,7 @@ public class Profile extends Fragment {
                 .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-//                        progressdia.dismiss();
+//                      progressdia.dismiss();
                         ivProfile.setImageURI(null);
                         Toast.makeText(getActivity(), "Successfully Uploaded", Toast.LENGTH_SHORT).show();
                         storageReference = storage.getReference().child("Profile Photos/"+fileName);
@@ -184,6 +240,9 @@ public class Profile extends Fragment {
                                 .addOnFailureListener(new OnFailureListener() {
                                     @Override
                                     public void onFailure(@NonNull Exception e) {
+                                        dataLayout.setVisibility(View.VISIBLE);
+                                        shimmerFrameLayout.stopShimmer();
+                                        shimmerFrameLayout.setVisibility(View.INVISIBLE);
                                         Toast.makeText(getActivity(), "Something went wrong...", Toast.LENGTH_SHORT).show();
                                     }
                                 });
@@ -195,6 +254,10 @@ public class Profile extends Fragment {
                         Toast.makeText(getActivity(), "Failed to Upload", Toast.LENGTH_SHORT).show();
                     }
                 });
+
+
+
     }
+
 
 }
