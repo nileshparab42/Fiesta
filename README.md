@@ -6,7 +6,7 @@ Fiesta is a comprehensive event organization app specifically designed for colle
 
 ## Features
 
-![features image](https://github.com/nileshparab42/Fiesta/blob/master/img/feature.png)
+![features image](https://github.com/nileshparab42/Fiesta/blob/master/img/features.png)
 
 - **Information about New Events:** Fiesta provides users with up-to-date information about various events. This feature likely includes details such as event names, descriptions, dates, times, locations, and possibly even images or videos to give users a preview of the events. Users can explore and discover exciting events happening in their area or of interest to them.
 
