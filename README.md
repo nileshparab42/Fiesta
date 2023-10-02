@@ -1,10 +1,13 @@
-![Cover image](https://github.com/nileshparab42/Sneaky/blob/master/assets/Sneaky.png)
+![Cover image](https://github.com/nileshparab42/Fiesta/blob/master/img/cover.png)
 
 # Fiesta - College Event Organization App
 
 Fiesta is a comprehensive event organization app specifically designed for college campuses. It simplifies the process of planning, managing, and promoting various events within the college community. Whether it's cultural festivals, sports competitions, academic conferences, or club activities, Fiesta has got you covered.
 
 ## Features
+
+![features image](https://github.com/nileshparab42/Fiesta/blob/master/img/feature.png)
+
 - **Information about New Events:** Fiesta provides users with up-to-date information about various events. This feature likely includes details such as event names, descriptions, dates, times, locations, and possibly even images or videos to give users a preview of the events. Users can explore and discover exciting events happening in their area or of interest to them.
 
 - **Ticket Purchase with Razorpay Integration:** Fiesta allows users to conveniently purchase tickets for events directly through the app. Integration with Razorpay ensures secure and seamless payment processing. Users can buy tickets for their chosen events with ease, making it a one-stop platform for event discovery and ticket booking.
