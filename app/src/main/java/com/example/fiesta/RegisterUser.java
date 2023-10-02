@@ -87,9 +87,6 @@ public class RegisterUser extends AppCompatActivity {
                                 ldate = fdate.format(date);
                                 DateFormat ftime = new SimpleDateFormat("HH:mm:ss");
                                 ltime = ftime.format(date);
-
-
-
                                 booking.put("date", ldate);
                                 booking.put("img", img);
                                 booking.put("time", ltime);

@@ -58,8 +58,6 @@ public class Profile extends Fragment {
     ShimmerFrameLayout shimmerFrameLayout;
     LinearLayout dataLayout;
 
-//    ProgressDialog progressdia;
-
     TextView tvUname,tvNickname,tvBday,tvLocation;
 
     String uname,nickname,bday,location;

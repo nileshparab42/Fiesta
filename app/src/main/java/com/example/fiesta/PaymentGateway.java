@@ -69,7 +69,6 @@ public class PaymentGateway extends AppCompatActivity implements PaymentResultLi
         String currentDateandTime = sdf.format(new Date());
         db = FirebaseFirestore.getInstance();
         uid=mAuth.getCurrentUser().getUid();
-
         tid = uid.substring(0,5)+currentDateandTime;
 
 
